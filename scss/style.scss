@@ -1,0 +1,21 @@
+$color-one: #340923;
+$color-two: #fd2baf;
+$color-three: #7c0d5c;
+$title: "Monofett", cursive;
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+
+  @import "main";
+
+  @import "about";
+
+  @import "services";
+
+  @import "progress";
+
+  @import "footer";
+}

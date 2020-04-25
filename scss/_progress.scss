@@ -1,0 +1,37 @@
+/*...progress...*/
+
+.myprogress {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  span {
+    margin-left: 20px;
+    color: $color-one;
+    font-weight: bold;
+  }
+
+  h1 {
+    margin-top: 20px;
+    text-align: center;
+    color: $color-three;
+    span {
+      color: $color-two;
+    }
+  }
+
+  .progress {
+    width: 800px;
+    margin: 10px 0 10px 0;
+    height: 25px;
+
+    .progress-bar {
+      color: $color-two;
+      background-color: $color-three;
+    }
+    @media (max-width: 1000px) {
+      width: 350px;
+    }
+  }
+}
+/*...End progress...*/

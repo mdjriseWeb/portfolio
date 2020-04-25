@@ -1,0 +1,159 @@
+/*....home page....*/
+.main {
+  background-image: url(../img/bg.svg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+  .logo {
+    color: $color-one;
+    cursor: pointer;
+    font-family: $title;
+    &:hover {
+      color: lighten($color-one, 15);
+    }
+    span {
+      color: #fff;
+      transition: 0.8s ease-in-out;
+      &:hover {
+        color: $color-one;
+        font-size: 50px;
+      }
+    }
+  }
+
+  .toggle {
+    background-color: lighten($color-one, 5);
+    transition: 0.5s ease-in-out;
+    &:hover {
+      background-color: darken($color-one, 8);
+    }
+  }
+
+  .nav-bg {
+    height: 60px;
+  }
+
+  .nav-items {
+    .nav-item {
+      display: inline-block;
+      list-style-type: none;
+      font-size: 15px;
+
+      a {
+        color: $color-one;
+        font-weight: bold;
+        text-align: center;
+        transition: 0.5s ease-in;
+        &:hover {
+          color: #fff;
+          background-color: lighten($color-one, 15);
+        }
+      }
+    }
+    .active a {
+      color: #fff;
+      &:hover {
+        color: $color-one;
+      }
+      @media (max-width: 1000px) {
+        margin-left: -40px;
+      }
+    }
+  }
+
+  .social-links {
+    ul {
+      position: absolute;
+      top: 35%;
+      right: 0px;
+      list-style-type: none;
+      @media (max-width: 1000px) {
+        top: 45%;
+      }
+    }
+
+    ul li a i {
+      padding: 22px 1px;
+      color: #fff;
+      background-color: $color-one;
+      width: 52px;
+      text-align: center;
+      font-size: 20px;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        color: lighten($color-one, 30);
+      }
+
+      @media (max-width: 1000px) {
+        padding: 15px 1px;
+      }
+    }
+
+    .fa-twitter {
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+    }
+
+    .fa-whatsapp {
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+  }
+
+  .brand {
+    position: absolute;
+    top: 20%;
+    left: 8%;
+
+    span {
+      margin-left: 10px;
+      color: #fff;
+      transition: 0.5s ease-in-out;
+      &:hover {
+        color: lighten($color-one, 10);
+        font-size: 25px;
+      }
+    }
+
+    button {
+      background-color: $color-one;
+      border-style: none;
+      padding: 8px;
+      width: 100px;
+      border-radius: 15px;
+      outline: none;
+    }
+
+    a {
+      color: $color-two;
+      text-decoration: none;
+      transition: 0.5s ease-in-out;
+      &:hover {
+        color: #fff;
+        font-size: 18px;
+      }
+    }
+
+    h3,
+    h1 {
+      color: $color-one;
+      font-weight: bold;
+    }
+  }
+
+  .bar i {
+    position: absolute;
+    bottom: 40px;
+    left: 48%;
+    font-size: 30px;
+    color: $color-two;
+    background-color: $color-one;
+    border-radius: 50%;
+    padding: 10px;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+/*....home page end....*/

@@ -1,0 +1,41 @@
+/*.....Services.....*/
+.services {
+  background-color: $color-three;
+
+  .left {
+    width: 40%;
+    display: inline-block;
+    margin: 20px 0 0 20px;
+    margin-left: 150px;
+    @media (max-width: 1000px) {
+      margin-left: 30px;
+    }
+  }
+
+  .right {
+    width: 40%;
+    display: inline-block;
+    margin: 20px 0 0 20px;
+  }
+
+  .fab,
+  .fas {
+    color: $color-two;
+    padding: 10px;
+    background-color: $color-one;
+    border-radius: 50%;
+    font-size: 40px;
+  }
+
+  h1 {
+    margin-top: 20px;
+    text-align: center;
+    color: $color-two;
+    font-weight: bold;
+
+    span {
+      color: #fff;
+    }
+  }
+}
+/*.....End Services.....*/

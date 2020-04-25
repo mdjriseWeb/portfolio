@@ -1,0 +1,66 @@
+/*....about page....*/
+.about {
+  border-bottom: 1px solid $color-two;
+
+  .about-text {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 43%;
+    padding: 10px;
+    margin-left: 180px;
+
+    h2 {
+      color: $color-two;
+      margin-left: 20px;
+      font-weight: bold;
+      font-size: 40px;
+    }
+
+    span {
+      color: $color-one;
+      margin-left: 20px;
+    }
+
+    button {
+      background-color: $color-one;
+      border-style: none;
+      padding: 8px;
+      width: 150px;
+      border-radius: 15px;
+      outline: none;
+
+      a {
+        color: $color-two;
+        text-decoration: none;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+    @media (max-width: 1000px) {
+      margin-left: 20px;
+    }
+  }
+
+  .details {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 43%;
+    padding: 10px;
+    text-align: center;
+
+    img {
+      width: 150px;
+      border-radius: 50%;
+      border: 3px solid $color-two;
+      outline: none;
+    }
+
+    span {
+      color: $color-three;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  }
+}
+/*.....End about.....*/

@@ -1,0 +1,72 @@
+/*...Footer...*/
+footer {
+  height: 21vh;
+  background-color: $color-one;
+  margin-top: 380px;
+
+  .myfooter {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    transform: translate(20%);
+    display: grid;
+    grid-template-columns: auto auto;
+    .footer-icons {
+      h3 {
+        color: #fff;
+        font-weight: bold;
+      }
+      span {
+        color: $color-two;
+      }
+      .fab {
+        margin: 8px 8px 0 2px;
+        padding: 10px;
+        background-color: $color-three;
+        color: $color-two;
+        border-radius: 50%;
+        font-size: 20px;
+      }
+
+      .footer-links {
+        a {
+          margin-right: 15px;
+          color: #fff;
+          text-decoration: none;
+          transition: 0.5s ease all;
+        }
+        a:hover {
+          font-size: 18px;
+          color: $color-two;
+        }
+      }
+    }
+
+    .address {
+      color: #fff;
+      a {
+        color: #fff;
+      }
+      .mail:hover {
+        text-decoration: none;
+        color: $color-two;
+      }
+      i {
+        font-size: 15px;
+        color: $color-two;
+        margin: 10px 10px;
+      }
+      .copyright {
+        color: $color-three;
+      }
+
+      .copyright span {
+        color: $color-two;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      transform: translate(0%);
+    }
+  }
+}
