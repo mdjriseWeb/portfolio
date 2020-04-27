@@ -54,12 +54,22 @@
       border-radius: 50%;
       border: 3px solid $color-two;
       outline: none;
+      margin-bottom: 20px;
+      margin-left: 15px;
+      transition: 1s ease-in-out;
+
+      &:hover {
+        width: 180px;
+      }
     }
 
     span {
       color: $color-three;
       font-size: 25px;
       font-weight: bold;
+    }
+    p {
+      margin-left: 30px;
     }
   }
 }

@@ -9,6 +9,7 @@
     color: $color-one;
     cursor: pointer;
     font-family: $title;
+    animation: logo-ani 1s forwards ease-in-out;
     &:hover {
       color: lighten($color-one, 15);
     }
@@ -18,6 +19,16 @@
       &:hover {
         color: $color-one;
         font-size: 50px;
+      }
+    }
+    @keyframes logo-ani {
+      0% {
+        transform: rotateX(0);
+        transform-origin: bottom;
+      }
+      100% {
+        transform: rotateX(360deg);
+        transform-origin: bottom;
       }
     }
   }
@@ -123,6 +134,28 @@
       width: 100px;
       border-radius: 15px;
       outline: none;
+      animation: contactBtn-ani 1s linear infinite both;
+
+      @keyframes contactBtn-ani {
+        0% {
+          transform: translate(0);
+        }
+        20% {
+          transform: translate(-2px, 2px);
+        }
+        40% {
+          transform: translate(-2px, -2px);
+        }
+        60% {
+          transform: translate(2px, 2px);
+        }
+        80% {
+          transform: translate(2px, -2px);
+        }
+        100% {
+          transform: translate(0);
+        }
+      }
     }
 
     a {

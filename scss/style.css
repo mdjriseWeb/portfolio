@@ -25,6 +25,8 @@ body .main .logo {
   color: #340923;
   cursor: pointer;
   font-family: "Monofett", cursive;
+  -webkit-animation: logo-ani 1s forwards ease-in-out;
+          animation: logo-ani 1s forwards ease-in-out;
 }
 
 body .main .logo:hover {
@@ -40,6 +42,36 @@ body .main .logo span {
 body .main .logo span:hover {
   color: #340923;
   font-size: 50px;
+}
+
+@-webkit-keyframes logo-ani {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+}
+
+@keyframes logo-ani {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
 }
 
 body .main .toggle {
@@ -158,6 +190,62 @@ body .main .brand button {
   width: 100px;
   border-radius: 15px;
   outline: none;
+  -webkit-animation: contactBtn-ani 1s linear infinite both;
+          animation: contactBtn-ani 1s linear infinite both;
+}
+
+@-webkit-keyframes contactBtn-ani {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes contactBtn-ani {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
 }
 
 body .main .brand a {
@@ -256,12 +344,24 @@ body .about .details img {
   border-radius: 50%;
   border: 3px solid #fd2baf;
   outline: none;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+body .about .details img:hover {
+  width: 180px;
 }
 
 body .about .details span {
   color: #7c0d5c;
   font-size: 25px;
   font-weight: bold;
+}
+
+body .about .details p {
+  margin-left: 30px;
 }
 
 body .services {
