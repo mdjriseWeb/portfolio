@@ -134,7 +134,7 @@
       width: 100px;
       border-radius: 15px;
       outline: none;
-      animation: contactBtn-ani 1s linear infinite both;
+      animation: contactBtn-ani 1s forwards;
 
       @keyframes contactBtn-ani {
         0% {
@@ -184,8 +184,31 @@
     background-color: $color-one;
     border-radius: 50%;
     padding: 10px;
+    animation: scroll-ani 1s linear infinite both;
+
     &:hover {
       color: #fff;
+    }
+
+    @keyframes scroll-ani {
+      0% {
+        transform: translate(0);
+      }
+      20% {
+        transform: translate(-2px, 2px);
+      }
+      40% {
+        transform: translate(-2px, -2px);
+      }
+      60% {
+        transform: translate(2px, 2px);
+      }
+      80% {
+        transform: translate(2px, -2px);
+      }
+      100% {
+        transform: translate(0);
+      }
     }
   }
 }
