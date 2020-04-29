@@ -155,7 +155,7 @@ body .main .social-links ul li a i:hover {
   }
 }
 
-body .main .social-links .fa-twitter {
+body .main .social-links .fa-facebook {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
@@ -269,7 +269,7 @@ body .main .brand h1 {
 body .main .bar i {
   position: absolute;
   bottom: 40px;
-  left: 48%;
+  left: 47%;
   font-size: 30px;
   color: #fd2baf;
   background-color: #340923;
